@@ -11,7 +11,7 @@ function FixedFooter() {
         <Wrapper>
             <Footer>
                 <FooterText>© 2023 {t("root.servicename")} <Version>({process.env.REACT_APP_SERVICE_VERSION}, {process.env.REACT_APP_SERVICE_TYPE})</Version> | Developed by<FooterLink href="https://lilyuri.art">LiIy</FooterLink></FooterText>
-                <FooterText>본 사이트는 비회원제 사이트 입니다. 베타 버전입니다. 언제든지 변동될 수 있습니다.</FooterText>
+                <FooterText>베타 버전입니다. 언제든지 변동될 수 있습니다.</FooterText>
                 <LinkWrapper>
                     <FooterLink href="/term">Terms and Conditions</FooterLink>
                     <FooterText>|</FooterText>

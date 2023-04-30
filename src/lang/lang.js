@@ -13,8 +13,14 @@ const resources = {
             root: {
                 lang: "ko",
                 servicename: "LilyDB",
-                bannertitle: "LilyDB 2nd Public Beta!",
-                bannercontent: "Thank You!",
+                bannertitle: "와!!!!!!!!",
+                bannercontent: "샌즈!!!!!!",
+            },
+            category: {
+                home: "홈",
+                manga: "만화 & 소설",
+                webtoon: "웹툰",
+                anime: "애니메이션",
             },
             meta: {
                 title: {
@@ -329,6 +335,12 @@ const resources = {
         translation: {
             warning: {
                 region: "This site is not optimized for English speakers. The information on this site is not available in English.",
+            },
+            category: {
+                home: "Home",
+                manga: "Comic & Novel",
+                webtoon: "🇰🇷 Webtoon",
+                anime: "Anime",
             },
             tags: {
                 "분류 안됨": "Uncategorized",
@@ -666,6 +678,12 @@ const resources = {
             warning: {
                 region: "このサイトは韓国のユーザー向けに最適化されています。一部の機能は制限される可能性があり、翻訳されていない情報も含まれる可能性があります。\n\
                 また、サイトの開発者は日本語を母語としていないため、不自然な文や言葉がある可能性があります。もし問題があれば、修正いたしますのでお知らせください。どうもありがとうございます。"
+            },
+            category: {
+                home: "ホーム",
+                manga: "漫画 & 小説",
+                webtoon: "🇰🇷 ウェブ漫画",
+                anime: "アニメ",
             },
             tags: {
                 "분류 안됨": "未分類",

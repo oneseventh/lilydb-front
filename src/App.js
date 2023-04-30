@@ -7,7 +7,6 @@ import styled from "styled-components";
 import { getAdult } from "./hooks/cookie";
 
 import { ThemeProvider } from "./ThemeProvider";
-import Loading from "./view/Loading";
 
 import "./lang/lang";
 import Collection from "pages/collection/Collection";
@@ -22,6 +21,7 @@ import LoadingSpinner from "view/LoadingSpinner";
 import RouteChangeTracker from "RouteChangeTracker";
 import { hot } from "react-hot-loader/root";
 import NotFound from "error/NotFound";
+import Toolbar from "components/Layout/Toolbar";
 
 
 const Wrapper = styled.div`
@@ -48,8 +48,9 @@ const Layout = () => {
                 smallUI ? <h1>당신의 화면 사이즈는 {t("root.servicename")}를 이용하기에 적합하지 않습니다.</h1> : (
                     <>
                         {!mobile && <Navbar />}
+                        <Toolbar />
                         <Wrapper>
-                            <Outlet key={location.pathname}/>
+                            <Outlet key={location.pathname} />
                             <FixedFooter />
                         </Wrapper>
                         {mobile && <Footer />}
@@ -61,7 +62,7 @@ const Layout = () => {
 }
 
 const App = () => {
-    const Home = React.lazy(() => import("./pages/Home"));
+    const Home = React.lazy(() => import("./pages/home/Home"));
     const Info = React.lazy(() => import("./pages/info/Info"));
     const Search = React.lazy(() => import("./pages/search/Search"));
     const Article = React.lazy(() => import("./pages/article/Article"));

@@ -12,6 +12,8 @@ export const Navbar = styled.nav`
     height: 100%;
     top: 0;
 
+    transition: width 0.15s ease-in-out;
+
     z-index: 2;
 `;
 
@@ -33,6 +35,7 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
     list-style: none;
+    
     ${props => {
         if (props.disabled) {
             return `
@@ -65,6 +68,7 @@ export const NavItem = styled.li`
         &>a {
             font-size: 1.2em;
             align-items: center;
+            justify-content: center;
         }
         &>a>span {
             display: none;

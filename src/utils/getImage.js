@@ -1,6 +1,7 @@
 export const IMAGE = {
     THUMBNAIL: "thumbnail",
-    PROFILE: "profile"
+    PROFILE: "profile",
+    BANNER: "banner"
 }
 
 export function getImage(type, id, width) {

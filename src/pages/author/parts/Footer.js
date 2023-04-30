@@ -137,7 +137,7 @@ const Category = styled.button`
         if (props.active) {
             return `color: white; background-color: var(--primary); border: 0.15em solid var(--primary);`;
         }
-    }})
+    }}
 `;
 
 export default Footer;

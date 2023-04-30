@@ -9,6 +9,7 @@ export const light = {
     darkGray: '#f1f1f1',
     border: '#e1e1e1',
     bg: '#f6f6f6',
+    homeNavbar: '246, 246, 246',
     scrollBar: '#e1e1e1',
     scroolBarThumb: '#f1f1f1',
 }
@@ -24,6 +25,7 @@ export const dark = {
     darkGray: '#1f1f1f',
     border: '#1a1a1a',
     bg: '#1c1c1c',
+    homeNavbar: '28, 28, 28',
     scrollBar: '#1a1a1a',
     scroolBarThumb: '#1f1f1f',
 }

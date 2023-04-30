@@ -65,7 +65,7 @@ function Osusume({ parameter, title, children }) {
         );
     if (loading)
         return (
-            <CardLoading />
+            <CardList />
         );
     return (
         <>

@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --white: #fff;
 
         --navbar: ${({ theme }) => theme.navbar};
+        --home-navbar: ${({ theme }) => theme.homeNavbar};
         --text: ${({ theme }) => theme.text};
         --gtext: ${({ theme }) => theme.gtext};
         --link: ${({ theme }) => theme.link};
@@ -33,11 +34,11 @@ export const GlobalStyle = createGlobalStyle`
         --purple: #6f42c1;
         --orange: #fd7e14;
 
-        --navbar-width: 250px;
+        --navbar-width: 240px;
         --footer-height: 4em;
 
         @media (max-width: 1400px) {
-            --navbar-width: 60px;
+            --navbar-width: 65px;
         }
 
         @media (max-width: 768px) {

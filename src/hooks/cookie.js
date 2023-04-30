@@ -61,7 +61,7 @@ export const setCookie = (cookie, value) => {
     const options = {
         path: '/',
         maxAge: 60 * 60 * 24 * 365,
-        secure: true
+        // secure: true
     }
     return cookies.set(cookie, value, options);
 }

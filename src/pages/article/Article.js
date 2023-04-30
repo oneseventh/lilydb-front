@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 import styled from "styled-components";
-import Loading from "view/Loading";
 import useArticle from "hooks/useArticle";
 
 import * as Article from "./style"
+import LoadingSpinner from "view/LoadingSpinner";
 
 const Wrapper = styled.div`
     width: 100%;
@@ -46,7 +46,7 @@ function ArticleController() {
 
     return (
         <Wrapper>
-            <Suspense fallback={<Loading />}>
+            <Suspense fallback={<LoadingSpinner />}>
                 <Header article={article} mobile={mobile} />
             </Suspense>
         </Wrapper>

@@ -88,7 +88,7 @@ const SearchBox = styled(Link)`
 
     display: flex;
     flex-direction: row;
-    item-align: center;
+    align-items: center;
     justify-content: flex-start;
 
     width: 40em;
@@ -100,7 +100,6 @@ const SearchBox = styled(Link)`
     outline: none;
     background-color: var(--bg);
     border: solid 0.15em var(--border);
-    font-family: 'fontawesome';
     color: var(--text);
 
     box-sizing: border-box;
@@ -118,7 +117,7 @@ const SearchInput = styled.input`
 
 const SearchIcon = styled.div`
     display: flex;
-    flex-dirction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;

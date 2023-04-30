@@ -227,7 +227,7 @@ function getColor(char) {
     return color;
 }
 
-function Card({ id, type, title, author, tags, release, warning, fromSearch, center, image, like, inline, override = null }) {
+function Card({ id, type, r18, title, author, tags, release, warning, fromSearch, center, image, like, inline, override = null }) {
     const releaseBadge = useMemo(() => release ? null : <Badge success>{t("card.badge.release.notRelease")}</Badge>, [release]);
     const warningBadge = useMemo(() => warning ? <Badge danger>{t("card.badge.warning")}</Badge> : null, [warning]);
 
@@ -248,6 +248,7 @@ function Card({ id, type, title, author, tags, release, warning, fromSearch, cen
                         {warningBadge}
                     </BadgeWrapper>
                     <BadgeWrapper bottom left>
+                        { r18 && <Badge danger>R18</Badge>}
                         <Badge>{t(`card.badge.content.${type}`)}</Badge>
                     </BadgeWrapper>
                     {

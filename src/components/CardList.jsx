@@ -50,6 +50,7 @@ function CardList({ title, articleIds, articles, like, children, image, inline, 
                 key: item.article_id,
                 id: item.article_id,
                 type: item.content_type,
+                r18: item.tags.map((item) => item.tag_name).includes("청불"),
                 title: t("root.lang") === 'ja' ? 
                     item.original_title ? 
                         item.original_title 
